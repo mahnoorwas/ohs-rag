@@ -1,0 +1,7 @@
+streamlit
+langchain
+langchain-community
+chromadb
+pypdf2
+python-dotenv
+scikit-learn
