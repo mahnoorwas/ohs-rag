@@ -5,3 +5,4 @@ chromadb
 pypdf2
 python-dotenv
 scikit-learn
+langchain-chroma

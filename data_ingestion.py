@@ -24,7 +24,7 @@ def load_pdf_and_split(pdf_path, chunk_size=500):
     return chunks
 
 docs = load_pdf_and_split("./ohs_clean.pdf")
-print(f"📄 Loaded {len(docs)} chunks from PDF")
+print("Loaded", len(docs), "chunks from PDF")
 
 
 embeddings = SimpleTFIDFEmbeddings(vectorizer)
@@ -35,4 +35,4 @@ vectorstore = Chroma(
 )
 vectorstore.add_texts(docs)
 
-print(f"✅ Ingested {len(docs)} chunks into ChromaDB")
+print("Injected", len(docs), "chunks into ChromaDB")
